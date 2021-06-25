@@ -137,23 +137,25 @@ Using elementary transformations, find the inverse of each of the matrices:
 \begin{align}
 \vec{A} = \myvec{1 & -1 \\ 2 & 3}
 \end{align}
-The matrix can be represented as follows : 
+The augmented matrix $ [A | I]$ is as given below:- 
 \begin{align}
-\vec{A}=I\vec{A}
-\\
-\myvec{1 & -1 & \vrule & 1 & 0 \\ 2 & 3 & \vrule & 0 & 1}\vec{A}
+\myvec{1 & -1 & \vrule & 1 & 0 \\ 2 & 3 & \vrule & 0 & 1}
 \end{align}
-Applying elementary transformations on $\vec{A}$ as follows
+We apply the elementary row operations on $ [A | I]$ as follows :-
 \begin{align}
+[A | I] = \myvec{1 & -1 & \vrule & 1 & 0 \\ 2 & 3 & \vrule & 0 & 1}
+\\
 \xleftrightarrow{R_2\leftarrow R_2-2R_1}   
-\myvec{1 & -1 & \vrule & 1 & 0 \\ 0 & 5 & \vrule & -2 & 1}\vec{A}
+\myvec{1 & -1 & \vrule & 1 & 0 \\ 0 & 5 & \vrule & -2 & 1}
 \\
 \xleftrightarrow{R_2\leftarrow \frac{R_2}{5}}
-\myvec{1 & -1 & \vrule & 1 & 0 \\ 0 & 1 & \vrule & \frac {-2}{5} & \frac {1}{5}}\vec{A}
+\myvec{1 & -1 & \vrule & 1 & 0 \\ 0 & 1 & \vrule & \frac {-2}{5} & \frac {1}{5}}
 \\
 \xleftrightarrow{R_2\leftarrow R_1+R_2}
-\myvec{1 & 0 & \vrule & \frac{3}{5} & \frac{1}{5} \\ 0 & 1 & \vrule & \frac{-2}{5} & \frac{1}{5}}\vec{A}
+\myvec{1 & 0 & \vrule & \frac{3}{5} & \frac{1}{5} \\ 0 & 1 & \vrule & \frac{-2}{5} & \frac{1}{5}}
 \end{align}
+By performing elementary transformations on augmented matrix$ [A | I]$ , we obtained the augmented matrix in the form $ [I | A]$. 
+Hence we can conclude that the matrix A is invertible and inverse of the matrix is:-
 \begin{align}
 \therefore\vec{A^{-1}}=\myvec {\frac{3}{5} & \frac{1}{5} \\  \frac{-2}{5} & \frac{1}{5}} 
 \end{align}
