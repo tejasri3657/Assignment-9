@@ -15,7 +15,6 @@ result =  np.linalg.inv(A)
 print("Inverse of the said matrix:")
 print(result)
 
-import numpy as np
   
 # Decomposition of the said matrix
 q, r = np.linalg.qr(matrix1)
